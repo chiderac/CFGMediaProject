@@ -26,7 +26,7 @@ def _connect_to_db(db_name):
             
 
 
-
+# CREATE USER TABLE 
 def create_user_table():
     try:
         db_name = 'movie_database'  # DB NAME

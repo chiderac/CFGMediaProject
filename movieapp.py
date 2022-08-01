@@ -29,7 +29,7 @@ def movie():
     return render_template('movie.html', posts=posts, title="Movie")
 
 
-
+# register page
 @app.route("/register", methods=['GET', 'POST'])
 def register():
     form = RegistrationForm()
@@ -38,7 +38,7 @@ def register():
         return redirect(url_for('home'))
     return render_template('register.html', title='Register', form=form)
 
-
+# login page
 @app.route("/login", methods=['GET', 'POST'])
 def login():
     form = LoginForm()
